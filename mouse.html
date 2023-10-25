@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mouse Events</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="Amrita Logo.png" alt="Event Logo" /></a>
+      </div>
+
+      <a href="index.html" id="home">Mouse Events</a>
+      <a href="calculator.html" id="events">Calculator</a>
+      <a href="form.html" id="form">Form</a>
+      <a href="video-gallery.html" id="video-gallery">Video Gallery</a>
+      <input type="search" placeholder="Search Events" />
+      <script src="script.js"></script>
+      <button id="search-buttons">Search</button>
+    </div>
+    <div class="event-container">
+      <h1>Mouse Events - Addition</h1>
+      <p>
+        Enter two numbers and click/hover/double-click the buttons to see the
+        addition:
+      </p>
+
+      <input type="number" id="number1" placeholder="Enter number 1" />
+      <input type="number" id="number2" placeholder="Enter number 2" />
+
+      <button class="button" onclick="performAddition('click')">
+        Click Me
+      </button>
+      <button
+        class="button"
+        onmouseover="performAddition('mouseover')"
+        onmouseout="clearMessage()"
+      >
+        Mouse Over Me
+      </button>
+      <button class="button" ondblclick="performAddition('dblclick')">
+        Double Click Me
+      </button>
+
+
+      <p id="message"></p>
+    </div>
+    
+        <div class="game-container">
+          <div
+            class="target"
+            onmouseover="moveTarget()"
+            onclick="scorePoint()"
+          ></div>
+          <p id="score">Every click on the moving box add a point!</p>
+          <p id="score">Score: <span id="scoreValue">0</span></p>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+
+    <script src="script.js"></script>
+  </body>
+</html>

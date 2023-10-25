@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css" />
+    <title>Electricity Bill Calculator</title>
+    
+</head>
+<body>
+  <div id="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="Amrita Logo.png" alt="Event Logo" /></a>
+    </div>
+
+    <a href="index.html" id="home">Mouse Events</a>
+    <a href="calculator.html" id="events">Calculator</a>
+    <a href="form.html" id="form">Form</a>
+    <a href="video-gallery.html" id="video-gallery">Video Gallery</a>
+    <input type="search" placeholder="Search Events" />
+    <script src="script.js"></script>
+    <button id="search-buttons">Search</button>
+  </div>
+  <script src="script.js"></script>
+  <div class="calculator">
+    <h1>Electricity Bill Calculator</h1>
+    <br><br><br><br><br><br>
+    <h2><bm>How does it work?</bm></h2>
+    <p> You pay a rate of 10 INR per unit for the first 100 units.</p>
+    <p>If the number of units is more than 100 but less than 200 then each unit is charged at INR 15.</p>
+    <p>Beyond 200 units each unit is charged at INR 20</p>
+    <p>If the number of units is more than 300 but less than 200 then each unit is charged at INR 25.</p>
+    <br><br><br><br><br><br>
+    <p>Enter the number of units consumed:</p>
+    <input type="number" id="unitsInput">
+    <button class="button" onclick="calculateBill()">Know your Bill!</button>
+
+    <p id="billResult">Your electricity bill is: INR </p>
+    <script src="script.js"></script>
+  </div>
+    
+</body>
+</html>

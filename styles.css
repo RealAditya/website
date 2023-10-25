@@ -1,0 +1,292 @@
+.game-container {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.target {
+  width: 50px;
+  height: 50px;
+  background-color: #ff5733;
+  position: relative;
+  cursor: pointer;
+}
+
+#score {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#search {
+  background-color: green;
+}
+#home {
+  margin: 10px 75px 10px 10px;
+}
+#register {
+  background-color: black;
+  color: white;
+  margin: 10px 60px 10px 75px;
+}
+/* ...previous styles... */
+
+/* ...previous styles... */
+
+.register-button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto; /* Push the button to the bottom */
+  width: 1400px;
+}
+#navbar {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  
+  font-family: montserrat;
+}
+#navbar a {
+  color: #ae2850;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+#navbar a:hover {
+  color: #ff6600; /* Change to the desired glowing color */
+}
+
+#navbar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#navbar button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 2px;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Add margin for spacing */
+}
+
+.logo img {
+  height: 40px; /* Adjust the height of the logo as needed */
+}
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.event-container {
+  text-align: center;
+  margin: 50px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ae2850;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #292929;
+}
+.calculator {
+  text-align: center;
+  background-color: black;
+  border: 1px solid #a37373;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 100px 400px 100px 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.body.calculator-page {
+  background-color: black; /* Override the background color for this page */
+}
+.calculator h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.calculator-input {
+  margin: 20px 0;
+}
+
+.calculator-input input {
+  padding: 5px;
+}
+
+.calculator-result {
+  font-size: 18px;
+}
+
+
+.form-container {
+  background-color: #444;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 50px;
+}
+
+.form-container h1 {
+  color: #fff;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.form-group1 {
+  margin: 40px;
+}
+
+.label {
+  display: block;
+  color: #fff;
+}
+
+.name-inputs {
+  display: flex;
+}
+
+.name-inputs .form-group {
+  flex: 1;
+  margin: 0 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-buttons input[type="radio"] {
+  margin: 0 5px;
+}
+#submit-button {
+  background-color: #1a1a1a;
+  padding: 10px 200px 10px 200px;
+  color: #ccc;
+}
+#submit-button:hover {
+  background-color: #a37373;
+}
+#phone {
+  width: 300px;
+}
+#options{
+  width: 200px;
+}
+.form-group2 {
+  display: inline-block; /* This makes the elements appear on the same line */
+  margin-right: 100px; /* Add some spacing between elements */
+}
+.banner {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  }
+  .navbar1{
+    width: 85;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logos{
+    width: 120px;
+    cursor: pointer;
+  }
+  .navbar1 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar1 ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .navbar1 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .navbar1 ul li:hover::after{
+    width: 100%;
+  }
+  .contenthome{
+    width: 100%;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  .contenthome h1{
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  .contenthome p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
