@@ -113,34 +113,7 @@ function calculateBill() {
 // Function to generate a random CAPTCHA
 // Generate a random captcha string
 // Function to generate a random CAPTCHA
-function generateCaptcha() {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  let captcha = '';
-  for (let i = 0; i < 6; i++) {
-      captcha += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return captcha;
-}
 
-// Function to initialize CAPTCHA
-function initCaptcha() {
-  const captcha = generateCaptcha();
-  document.getElementById('captcha').textContent = captcha;
-}
-
-// Function to check if the entered text matches the CAPTCHA
-document.getElementById('check-captcha').addEventListener('click', function () {
-  const captcha = document.getElementById('captcha').textContent;
-  const input = document.getElementById('captcha-input').value;
-  if (input === captcha) {
-      document.getElementById('captcha-result').textContent = 'CAPTCHA matched!';
-  } else {
-      document.getElementById('captcha-result').textContent = 'CAPTCHA does not match. Please try again.';
-  }
-});
-
-// Initialize CAPTCHA
-initCaptcha();
 document.getElementById('customer-form').addEventListener('submit', function (event) {
   const honeypotField = document.getElementById('honeypot');
 
